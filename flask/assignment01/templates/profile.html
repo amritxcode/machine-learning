@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+</head>
+<body>
+    <!-- Displaying the variable passed from Python -->
+    <h1>Welcome back, {{ name }}!</h1>
+    
+    <h2>Your Skills:</h2>
+    <ul>
+        <!-- Using a Jinja2 loop to display items from the list -->
+        {% for skill in my_skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
